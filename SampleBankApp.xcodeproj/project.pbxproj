@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA24BEB26DA64AD0027FC31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24BEA26DA64AD0027FC31 /* AppDelegate.swift */; };
+		FAA24BED26DA64AD0027FC31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24BEC26DA64AD0027FC31 /* SceneDelegate.swift */; };
+		FAA24BF126DA64AE0027FC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA24BF026DA64AE0027FC31 /* Assets.xcassets */; };
+		FAA24BF426DA64AE0027FC31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA24BF326DA64AE0027FC31 /* Preview Assets.xcassets */; };
+		FAA24BF726DA64AE0027FC31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA24BF526DA64AE0027FC31 /* LaunchScreen.storyboard */; };
+		FAA24C0226DA64AE0027FC31 /* SampleBankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C0126DA64AE0027FC31 /* SampleBankAppTests.swift */; };
+		FAA24C0D26DA64AE0027FC31 /* SampleBankAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C0C26DA64AE0027FC31 /* SampleBankAppUITests.swift */; };
+		FAA24C2126DA65640027FC31 /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2026DA65640027FC31 /* AccountSummaryViewModel.swift */; };
+		FAA24C2326DA65750027FC31 /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2226DA65750027FC31 /* AddAccountViewModel.swift */; };
+		FAA24C2526DA659B0027FC31 /* TransferFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2426DA659B0027FC31 /* TransferFundsViewModel.swift */; };
+		FAA24C2726DA65B20027FC31 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2626DA65B20027FC31 /* AccountService.swift */; };
+		FAA24C2926DA65C80027FC31 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2826DA65C80027FC31 /* AccountListView.swift */; };
+		FAA24C2B26DA65E20027FC31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2A26DA65E20027FC31 /* Account.swift */; };
+		FAA24C2D26DA65F70027FC31 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2C26DA65F70027FC31 /* CreateAccountRequest.swift */; };
+		FAA24C2F26DA66060027FC31 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C2E26DA66060027FC31 /* CreateAccountResponse.swift */; };
+		FAA24C3126DA66170027FC31 /* TransferFundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C3026DA66170027FC31 /* TransferFundRequest.swift */; };
+		FAA24C3326DA66250027FC31 /* TransferFundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C3226DA66250027FC31 /* TransferFundResponse.swift */; };
+		FAA24C3826DA66A80027FC31 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C3726DA66A80027FC31 /* Double+Extensions.swift */; };
+		FAA24C3A26DA66B40027FC31 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C3926DA66B40027FC31 /* URL+Extensions.swift */; };
+		FAA24C3C26DA66BF0027FC31 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C3B26DA66BF0027FC31 /* View+Extensions.swift */; };
+		FAA24C3F26DA66F60027FC31 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C3E26DA66F60027FC31 /* AccountSummaryScreen.swift */; };
+		FAA24C4126DA67090027FC31 /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C4026DA67090027FC31 /* AddAccountScreen.swift */; };
+		FAA24C4326DA67180027FC31 /* TransferFundsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24C4226DA67180027FC31 /* TransferFundsScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA24BFE26DA64AE0027FC31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA24BDF26DA64AD0027FC31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA24BE626DA64AD0027FC31;
+			remoteInfo = SampleBankApp;
+		};
+		FAA24C0926DA64AE0027FC31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA24BDF26DA64AD0027FC31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA24BE626DA64AD0027FC31;
+			remoteInfo = SampleBankApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAA24BE726DA64AD0027FC31 /* SampleBankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA24BEA26DA64AD0027FC31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA24BEC26DA64AD0027FC31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAA24BF026DA64AE0027FC31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA24BF326DA64AE0027FC31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAA24BF626DA64AE0027FC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA24BF826DA64AE0027FC31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA24BFD26DA64AE0027FC31 /* SampleBankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA24C0126DA64AE0027FC31 /* SampleBankAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBankAppTests.swift; sourceTree = "<group>"; };
+		FAA24C0326DA64AE0027FC31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA24C0826DA64AE0027FC31 /* SampleBankAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBankAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA24C0C26DA64AE0027FC31 /* SampleBankAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBankAppUITests.swift; sourceTree = "<group>"; };
+		FAA24C0E26DA64AE0027FC31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA24C2026DA65640027FC31 /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
+		FAA24C2226DA65750027FC31 /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
+		FAA24C2426DA659B0027FC31 /* TransferFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsViewModel.swift; sourceTree = "<group>"; };
+		FAA24C2626DA65B20027FC31 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		FAA24C2826DA65C80027FC31 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		FAA24C2A26DA65E20027FC31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FAA24C2C26DA65F70027FC31 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
+		FAA24C2E26DA66060027FC31 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
+		FAA24C3026DA66170027FC31 /* TransferFundRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundRequest.swift; sourceTree = "<group>"; };
+		FAA24C3226DA66250027FC31 /* TransferFundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundResponse.swift; sourceTree = "<group>"; };
+		FAA24C3726DA66A80027FC31 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		FAA24C3926DA66B40027FC31 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		FAA24C3B26DA66BF0027FC31 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		FAA24C3E26DA66F60027FC31 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
+		FAA24C4026DA67090027FC31 /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
+		FAA24C4226DA67180027FC31 /* TransferFundsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA24BE426DA64AD0027FC31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA24BFA26DA64AE0027FC31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA24C0526DA64AE0027FC31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA24BDE26DA64AD0027FC31 = {
+			isa = PBXGroup;
+			children = (
+				FAA24BE926DA64AD0027FC31 /* SampleBankApp */,
+				FAA24C0026DA64AE0027FC31 /* SampleBankAppTests */,
+				FAA24C0B26DA64AE0027FC31 /* SampleBankAppUITests */,
+				FAA24BE826DA64AD0027FC31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA24BE826DA64AD0027FC31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24BE726DA64AD0027FC31 /* SampleBankApp.app */,
+				FAA24BFD26DA64AE0027FC31 /* SampleBankAppTests.xctest */,
+				FAA24C0826DA64AE0027FC31 /* SampleBankAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA24BE926DA64AD0027FC31 /* SampleBankApp */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C3D26DA66EB0027FC31 /* Screens */,
+				FAA24C1F26DA64EF0027FC31 /* View Models */,
+				FAA24C1E26DA64ED0027FC31 /* Views */,
+				FAA24C1D26DA64EA0027FC31 /* Services */,
+				FAA24C1C26DA64E50027FC31 /* Models */,
+				FAA24C1B26DA64E30027FC31 /* Extensions */,
+				FAA24BEA26DA64AD0027FC31 /* AppDelegate.swift */,
+				FAA24BEC26DA64AD0027FC31 /* SceneDelegate.swift */,
+				FAA24BF026DA64AE0027FC31 /* Assets.xcassets */,
+				FAA24BF526DA64AE0027FC31 /* LaunchScreen.storyboard */,
+				FAA24BF826DA64AE0027FC31 /* Info.plist */,
+				FAA24BF226DA64AE0027FC31 /* Preview Content */,
+			);
+			path = SampleBankApp;
+			sourceTree = "<group>";
+		};
+		FAA24BF226DA64AE0027FC31 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24BF326DA64AE0027FC31 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAA24C0026DA64AE0027FC31 /* SampleBankAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C0126DA64AE0027FC31 /* SampleBankAppTests.swift */,
+				FAA24C0326DA64AE0027FC31 /* Info.plist */,
+			);
+			path = SampleBankAppTests;
+			sourceTree = "<group>";
+		};
+		FAA24C0B26DA64AE0027FC31 /* SampleBankAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C0C26DA64AE0027FC31 /* SampleBankAppUITests.swift */,
+				FAA24C0E26DA64AE0027FC31 /* Info.plist */,
+			);
+			path = SampleBankAppUITests;
+			sourceTree = "<group>";
+		};
+		FAA24C1B26DA64E30027FC31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C3726DA66A80027FC31 /* Double+Extensions.swift */,
+				FAA24C3926DA66B40027FC31 /* URL+Extensions.swift */,
+				FAA24C3B26DA66BF0027FC31 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAA24C1C26DA64E50027FC31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C2A26DA65E20027FC31 /* Account.swift */,
+				FAA24C2C26DA65F70027FC31 /* CreateAccountRequest.swift */,
+				FAA24C2E26DA66060027FC31 /* CreateAccountResponse.swift */,
+				FAA24C3026DA66170027FC31 /* TransferFundRequest.swift */,
+				FAA24C3226DA66250027FC31 /* TransferFundResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA24C1D26DA64EA0027FC31 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C2626DA65B20027FC31 /* AccountService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAA24C1E26DA64ED0027FC31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C2826DA65C80027FC31 /* AccountListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAA24C1F26DA64EF0027FC31 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C2026DA65640027FC31 /* AccountSummaryViewModel.swift */,
+				FAA24C2226DA65750027FC31 /* AddAccountViewModel.swift */,
+				FAA24C2426DA659B0027FC31 /* TransferFundsViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		FAA24C3D26DA66EB0027FC31 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAA24C3E26DA66F60027FC31 /* AccountSummaryScreen.swift */,
+				FAA24C4026DA67090027FC31 /* AddAccountScreen.swift */,
+				FAA24C4226DA67180027FC31 /* TransferFundsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA24BE626DA64AD0027FC31 /* SampleBankApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA24C1126DA64AE0027FC31 /* Build configuration list for PBXNativeTarget "SampleBankApp" */;
+			buildPhases = (
+				FAA24BE326DA64AD0027FC31 /* Sources */,
+				FAA24BE426DA64AD0027FC31 /* Frameworks */,
+				FAA24BE526DA64AD0027FC31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleBankApp;
+			productName = SampleBankApp;
+			productReference = FAA24BE726DA64AD0027FC31 /* SampleBankApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA24BFC26DA64AE0027FC31 /* SampleBankAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA24C1426DA64AE0027FC31 /* Build configuration list for PBXNativeTarget "SampleBankAppTests" */;
+			buildPhases = (
+				FAA24BF926DA64AE0027FC31 /* Sources */,
+				FAA24BFA26DA64AE0027FC31 /* Frameworks */,
+				FAA24BFB26DA64AE0027FC31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA24BFF26DA64AE0027FC31 /* PBXTargetDependency */,
+			);
+			name = SampleBankAppTests;
+			productName = SampleBankAppTests;
+			productReference = FAA24BFD26DA64AE0027FC31 /* SampleBankAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAA24C0726DA64AE0027FC31 /* SampleBankAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA24C1726DA64AE0027FC31 /* Build configuration list for PBXNativeTarget "SampleBankAppUITests" */;
+			buildPhases = (
+				FAA24C0426DA64AE0027FC31 /* Sources */,
+				FAA24C0526DA64AE0027FC31 /* Frameworks */,
+				FAA24C0626DA64AE0027FC31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA24C0A26DA64AE0027FC31 /* PBXTargetDependency */,
+			);
+			name = SampleBankAppUITests;
+			productName = SampleBankAppUITests;
+			productReference = FAA24C0826DA64AE0027FC31 /* SampleBankAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA24BDF26DA64AD0027FC31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FAA24BE626DA64AD0027FC31 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FAA24BFC26DA64AE0027FC31 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FAA24BE626DA64AD0027FC31;
+					};
+					FAA24C0726DA64AE0027FC31 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FAA24BE626DA64AD0027FC31;
+					};
+				};
+			};
+			buildConfigurationList = FAA24BE226DA64AD0027FC31 /* Build configuration list for PBXProject "SampleBankApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA24BDE26DA64AD0027FC31;
+			productRefGroup = FAA24BE826DA64AD0027FC31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA24BE626DA64AD0027FC31 /* SampleBankApp */,
+				FAA24BFC26DA64AE0027FC31 /* SampleBankAppTests */,
+				FAA24C0726DA64AE0027FC31 /* SampleBankAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA24BE526DA64AD0027FC31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA24BF726DA64AE0027FC31 /* LaunchScreen.storyboard in Resources */,
+				FAA24BF426DA64AE0027FC31 /* Preview Assets.xcassets in Resources */,
+				FAA24BF126DA64AE0027FC31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA24BFB26DA64AE0027FC31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA24C0626DA64AE0027FC31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA24BE326DA64AD0027FC31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA24C3F26DA66F60027FC31 /* AccountSummaryScreen.swift in Sources */,
+				FAA24C2326DA65750027FC31 /* AddAccountViewModel.swift in Sources */,
+				FAA24C3A26DA66B40027FC31 /* URL+Extensions.swift in Sources */,
+				FAA24C3826DA66A80027FC31 /* Double+Extensions.swift in Sources */,
+				FAA24BEB26DA64AD0027FC31 /* AppDelegate.swift in Sources */,
+				FAA24BED26DA64AD0027FC31 /* SceneDelegate.swift in Sources */,
+				FAA24C3326DA66250027FC31 /* TransferFundResponse.swift in Sources */,
+				FAA24C4126DA67090027FC31 /* AddAccountScreen.swift in Sources */,
+				FAA24C2F26DA66060027FC31 /* CreateAccountResponse.swift in Sources */,
+				FAA24C2926DA65C80027FC31 /* AccountListView.swift in Sources */,
+				FAA24C2B26DA65E20027FC31 /* Account.swift in Sources */,
+				FAA24C2726DA65B20027FC31 /* AccountService.swift in Sources */,
+				FAA24C2526DA659B0027FC31 /* TransferFundsViewModel.swift in Sources */,
+				FAA24C2126DA65640027FC31 /* AccountSummaryViewModel.swift in Sources */,
+				FAA24C2D26DA65F70027FC31 /* CreateAccountRequest.swift in Sources */,
+				FAA24C3C26DA66BF0027FC31 /* View+Extensions.swift in Sources */,
+				FAA24C3126DA66170027FC31 /* TransferFundRequest.swift in Sources */,
+				FAA24C4326DA67180027FC31 /* TransferFundsScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA24BF926DA64AE0027FC31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA24C0226DA64AE0027FC31 /* SampleBankAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA24C0426DA64AE0027FC31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA24C0D26DA64AE0027FC31 /* SampleBankAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA24BFF26DA64AE0027FC31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA24BE626DA64AD0027FC31 /* SampleBankApp */;
+			targetProxy = FAA24BFE26DA64AE0027FC31 /* PBXContainerItemProxy */;
+		};
+		FAA24C0A26DA64AE0027FC31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA24BE626DA64AD0027FC31 /* SampleBankApp */;
+			targetProxy = FAA24C0926DA64AE0027FC31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA24BF526DA64AE0027FC31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA24BF626DA64AE0027FC31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA24C0F26DA64AE0027FC31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA24C1026DA64AE0027FC31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA24C1226DA64AE0027FC31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SampleBankApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4824M4U977;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SampleBankApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zulqurnain.app.SampleBankApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA24C1326DA64AE0027FC31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SampleBankApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4824M4U977;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SampleBankApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zulqurnain.app.SampleBankApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAA24C1526DA64AE0027FC31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4824M4U977;
+				INFOPLIST_FILE = SampleBankAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zulqurnain.app.SampleBankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBankApp.app/SampleBankApp";
+			};
+			name = Debug;
+		};
+		FAA24C1626DA64AE0027FC31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4824M4U977;
+				INFOPLIST_FILE = SampleBankAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zulqurnain.app.SampleBankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBankApp.app/SampleBankApp";
+			};
+			name = Release;
+		};
+		FAA24C1826DA64AE0027FC31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4824M4U977;
+				INFOPLIST_FILE = SampleBankAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zulqurnain.app.SampleBankAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleBankApp;
+			};
+			name = Debug;
+		};
+		FAA24C1926DA64AE0027FC31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4824M4U977;
+				INFOPLIST_FILE = SampleBankAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zulqurnain.app.SampleBankAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleBankApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA24BE226DA64AD0027FC31 /* Build configuration list for PBXProject "SampleBankApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA24C0F26DA64AE0027FC31 /* Debug */,
+				FAA24C1026DA64AE0027FC31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA24C1126DA64AE0027FC31 /* Build configuration list for PBXNativeTarget "SampleBankApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA24C1226DA64AE0027FC31 /* Debug */,
+				FAA24C1326DA64AE0027FC31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA24C1426DA64AE0027FC31 /* Build configuration list for PBXNativeTarget "SampleBankAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA24C1526DA64AE0027FC31 /* Debug */,
+				FAA24C1626DA64AE0027FC31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA24C1726DA64AE0027FC31 /* Build configuration list for PBXNativeTarget "SampleBankAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA24C1826DA64AE0027FC31 /* Debug */,
+				FAA24C1926DA64AE0027FC31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA24BDF26DA64AD0027FC31 /* Project object */;
+}
